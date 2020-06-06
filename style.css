@@ -9,5 +9,5 @@ body{
     background-image: linear-gradient(black,grey);
 }
 #achievements{
-    position: absolute;
+    position: relative;
 }
