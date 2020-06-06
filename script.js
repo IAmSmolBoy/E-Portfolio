@@ -13,5 +13,13 @@ function AboutMe(){
     }
 }
 function Achievements(){
-    
+    for(i=1;i<achievements.length+1;i++){
+        console.log(achievements[i-1].style.display)
+        if(achievements[i-1].style.display==='none'){
+            achievements[i-1].style.display='block'
+        }
+        else{
+            achievements[i-1].style.display='none'
+        }
+    }
 }
