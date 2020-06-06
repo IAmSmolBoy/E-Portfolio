@@ -1,6 +1,12 @@
 #title{
     text-align: center;
 }
+#content{
+    width: 90vw;
+    height: 90vh;
+    border: teal;
+    border-width: 2px;
+}
 body{
     color:white;
     height: 100vh;
@@ -10,4 +16,8 @@ body{
 }
 #achievements{
     position: relative;
+    text-align: center;
+}
+.achievements{
+    text-align: center;
 }
