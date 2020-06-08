@@ -4,11 +4,11 @@
     font-size: 3vw;
 }
 @keyframes AboutMe{
-    0%{transform: rotate(0); left: -10vw;color: red;}
-    25%{color: orange;transform: rotate(180deg);left: 3.75vw;}
-    50%{color: yellow;transform: rotate(360deg);left: 17.5vw;}
-    75%{color: green;transform: rotate(540deg);left: 31.25vw;}
-    100%{transform: rotate(720deg); left: 45vw;color: white;}
+    0%{transform: rotate(0); left: -45vw;color: red;}
+    25%{color: orange;transform: rotate(180deg);left: -31.75vw;}
+    50%{color: yellow;transform: rotate(360deg);left: -18vw;}
+    75%{color: green;transform: rotate(540deg);left: -4.25vw;}
+    100%{transform: rotate(720deg); left: 0vw;color: white;}
 }
 #aboutMe:hover{
     cursor: pointer;
@@ -17,7 +17,6 @@
 #aboutMe{
     font-size: 2vw;
     animation: AboutMe 1s linear 1;
-    left:45vw;
     width: 10vw;
     position: relative;
 }
@@ -29,33 +28,30 @@ body{
     background-image: linear-gradient(black,grey);
 }
 #achievements{
-    left: 45vw;
     width: min-content;
     font-size: 2vw;
     color:white;
     position: relative;
     text-decoration: none;
-    color: yellow;
 }
 #achievements:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 #Myself{
-    left: 45vw;
     width: min-content;
     font-size: 2vw;
     color:white;
     position: relative;
     text-decoration: none;
-    color: red;
 }
 #Myself:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 #Menu{
+    position: absolute;
+    left: 45vw;
     border: white solid 1px;
     width: min-content;
-    left:50vw;
 }
