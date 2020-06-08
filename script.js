@@ -1,5 +1,13 @@
 const achievements=document.getElementsByClassName('achievements')
 const Me=document.getElementsByClassName('AboutMe')
+const Content=document.getElementById("content")
+
+
+
+
+
+
+
 
 function AboutMe(){
     for(i=1;i<=Me.length;i++){
@@ -11,3 +19,10 @@ function AboutMe(){
         }
     }
 }
+
+
+
+
+
+
+

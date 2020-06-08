@@ -1,17 +1,30 @@
 #title{
     text-align: center;
 }
-#content{
 
-    text-align: center;
-    position: absolute;
-    border: black solid;
-    border-width: 5px;
-    background-color: rgb(64,64,64);
-    left: 45vw;
+@keyframes mymove {
+    0%{transform:rotate(0);left:100vw;}
+    50% {transform: rotate(180deg);left:75vw;}
+    100%{transform: rotate(360deg);left:47vw;}
 }
-#ContentPage{
-
+@keyframes AboutMe{
+    0%{transform: rotate(0); left: -10vw;}
+    100%{transform: rotate(720deg); left: 47vw;}
+}
+#contentPage{
+    left: 47vw;
+    position: relative;
+    width: max-content;
+    animation-name: mymove;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+#aboutMe{
+    animation: AboutMe 1s linear 1;
+    left:47vw;
+    width: 7vw;
+    position: relative;
+    text-decoration: underline;
 }
 body{
     color:white;
@@ -21,26 +34,16 @@ body{
     background-image: linear-gradient(black,grey);
 }
 #achievements{
-    color:turquoise;
+    color:white;
     position: relative;
-    text-align: center;
     text-decoration: none;
 }
 #achievements:hover{
     text-decoration: underline;
 }
-#aboutMe{
-    position: relative;
-    text-align: center;
-    text-decoration: underline;
-}
-.AboutMe{  
-    text-align: center; 
-}
 #Myself{
-    color:turquoise;
+    color:white;
     position: relative;
-    text-align: center;
     text-decoration: none;
 }
 #Myself:hover{
