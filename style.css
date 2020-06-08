@@ -1,23 +1,27 @@
 #title{
     text-align: center;
     font-family: cursive;
-    font-size: 3vw;
+    font-size: 5vw;
 }
-@keyframes AboutMe{
+@keyframes RoatatingRainbow{
     0%{transform: rotate(0); left: -45vw;color: red;}
-    25%{color: orange;transform: rotate(180deg);left: -31.75vw;}
-    50%{color: yellow;transform: rotate(360deg);left: -18vw;}
-    75%{color: green;transform: rotate(540deg);left: -4.25vw;}
+    25%{color: orange;transform: rotate(180deg);left: -33.75vw;}
+    50%{color: yellow;transform: rotate(360deg);left: -22.5vw;}
+    75%{color: green;transform: rotate(540deg);left: -11.25vw;}
     100%{transform: rotate(720deg); left: 0vw;color: white;}
+}
+@keyframes SizeUp{
+    from{font-size: 1px;}
+    to{font-size: 2vw;}
 }
 #aboutMe:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 #aboutMe{
-    font-size: 2vw;
-    animation: AboutMe 1s linear 1;
-    width: 10vw;
+    font-size: 3.5vw;
+    animation: RoatatingRainbow 1s linear 1;
+    width:15vw;
     position: relative;
 }
 body{
@@ -29,8 +33,8 @@ body{
 }
 #achievements{
     width: min-content;
-    font-size: 2vw;
     color:white;
+    font-size: 2vw;
     position: relative;
     text-decoration: none;
 }
@@ -39,8 +43,8 @@ body{
     text-decoration: underline;
 }
 #Myself{
-    width: min-content;
     font-size: 2vw;
+    width: min-content;
     color:white;
     position: relative;
     text-decoration: none;
@@ -51,7 +55,7 @@ body{
 }
 #Menu{
     position: absolute;
-    left: 45vw;
+    left: 43.5vw;
     border: white solid 1px;
     width: min-content;
 }
