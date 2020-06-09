@@ -15,3 +15,20 @@ img{
 .About{
     width: 90vw;
 }
+#nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    left:0px;
+    height: min-content;
+}
+#back{
+    color:black;
+    text-decoration: none;
+}
+#back:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
