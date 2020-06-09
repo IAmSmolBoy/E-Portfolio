@@ -6,3 +6,10 @@ body{
     background-color: black;
     background-image: linear-gradient(black,grey);
 }
+#MoreInfo{
+    text-align: center;
+    font-size: 4vw;
+}
+.aboutMe{
+    width: 90vw;
+}

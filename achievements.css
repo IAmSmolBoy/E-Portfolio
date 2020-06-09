@@ -8,7 +8,11 @@ body{
 img{
     width: 30vw;
 }
+p{
+    font-size: 2vw;
+}
 .achievements{
+    color: lightblue;
     font-size: 3vw;
     width: 95vw;
 }
@@ -16,6 +20,8 @@ img{
     width: 90vw;
 }
 #nav{
+    font-size: 2vw;
+    text-align: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
