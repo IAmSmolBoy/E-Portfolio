@@ -14,11 +14,11 @@
     from{font-size: 1px;}
     to{font-size: 2vw;}
 }
-#aboutMe:hover{
+.aboutMe:hover{
     cursor: pointer;
     text-decoration: underline;
 }
-#aboutMe{
+.aboutMe{
     font-size: 3.5vw;
     animation: RoatatingRainbow 1s linear 1;
     width:15vw;
