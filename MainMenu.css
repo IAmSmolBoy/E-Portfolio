@@ -10,9 +10,22 @@ body{
     color: white;
 }
 #ViewMore{
-    align-self: center;
-    border: 1px solid maroon;
+    position: relative;
+    top: 50vh;
+    left: 44vw;
     width: min-content;
     color:red;
     text-decoration: none;
+}
+#ViewMore:hover{
+    text-decoration: underline;
+}
+#SelfIntro{
+    text-align: center;
+    color: white;
+    top:50vh;
+    position: relative;
+}
+div{
+    display: block;
 }
