@@ -8,7 +8,7 @@
     25%{color: orange;transform: rotate(180deg);left: -33.75vw;}
     50%{color: yellow;transform: rotate(360deg);left: -22.5vw;}
     75%{color: green;transform: rotate(540deg);left: -11.25vw;}
-    100%{transform: rotate(720deg); left: 0vw;color: white;}
+    100%{transform: rotate(720deg); left: 0vw;color: lightblue;}
 }
 @keyframes SizeUp{
     from{font-size: 1px;}
@@ -19,39 +19,20 @@
     text-decoration: underline;
 }
 .aboutMe{
+    color: lightblue;
+    text-decoration: none;
     font-size: 3.5vw;
     animation: RoatatingRainbow 1s linear 1;
     width:15vw;
     position: relative;
 }
 body{
+    font-family: 'Montserrat', sans-serif;
     color:white;
     height: 100vh;
     width: 100vw;
     background-color: black;
     background-image: linear-gradient(black,grey);
-}
-#achievements{
-    width: min-content;
-    color:white;
-    font-size: 2vw;
-    position: relative;
-    text-decoration: none;
-}
-#achievements:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-#Myself{
-    font-size: 2vw;
-    width: min-content;
-    color:white;
-    position: relative;
-    text-decoration: none;
-}
-#Myself:hover{
-    cursor: pointer;
-    text-decoration: underline;
 }
 #Menu{
     position: absolute;
