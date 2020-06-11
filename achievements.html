@@ -10,32 +10,58 @@
 <body>
     <div id="nav"><a href="MainMenu.html" id="home" class="navbar">Back to Homepage</a><a href="Myself.html" id="myself" class="navbar">About Me</a></div>
     <div id="title">Achievements</div>
-    <li class="achievements AboutMe2" >Edusave Good Progress Award 2019</li>
-    <img src="Edusave Good Progress 2019.jpeg" alt="Edusave Good Progress 2019">
-    <li class="achievements AboutMe2" >Bedok View Model Student Award 2019</li>
-    <img src="ModelStudentAward.jpeg" alt="Model Student Award">
-    <li class="achievements AboutMe2" >Credit in ICAS Assessments Mathematics 2019</li>
-    <img src="ICAS Math 2019.jpeg" alt="ICAS Math 2019">
-    <li class="achievements AboutMe2" >Participation in Code Xtreme Apps 2019</li>
-    <img src="Code Xtreme Apps 2019 participation.jpeg" alt="Code Xtreme Apps 2019">
-    <li class="achievements AboutMe2" >LifeSaving 3 Award 2019</li>
-    <img src="Life Saving 3.jpeg" alt="Life Saving 3">
-    <li class="achievements AboutMe2" >Award of commendation in Discovering the Science of Flight Advanced Flight Module 2019</li>
-    <img src="" alt="">
-    <li class="achievements AboutMe2" >Participation in BVSS Student Leadership Camp 2019</li>
-    <img src="StudentLeadershipCamp.jpeg" alt="Student Leadership Camp">
-    <li class="achievements AboutMe2" >Outstanding CCA Member Award (SJBS)2018</li>
-    <img src="Outstanding CCA Member.jpeg" alt="Outstanding CCA Member">
-    <li class="achievements AboutMe2" >2nd Runner up in Singapore Taekwan-do Academy Junior Board Breaking Challenge 2018</li>
-    <img src="3rd in Junior Board Breaking challenge.jpeg" alt="3rd in Junior Board Breaking challenge">
-    <img class="Medals" src="Board Breaking Challenge 3rd.jpeg" alt="Board Breaking Challenge 3rd">
-    <li class="achievements">2013 ICAS mathematics and science competition</li>
-    <li class="achievements">2015 ICAS mathematics and science competition</li>
-    <li class="achievements">2016 Math Olympiad</li>
-    <li class="achievements">Gold Swimsafer</li>
-    <li class="achievements">Grade 5 Violin</li>
-    <li class="achievements">Mathematics outstanding performance 2012</li>
-    <li class="achievements">Mathematics outstanding performance 2014</li>
-    <script src="achievements.js"></script>
+    <ul class="Years" id="2019">2019</ul>
+    <ul class="Years" id="2018">2018</ul>
+    <ul class="Years" id="2017">2017</ul>
+    <ul class="Years" id="2016">2016</ul>
+    <ul class="Years" id="2015">2015</ul>
+    <ul class="Years" id="2014">2014</ul>
+    <ul class="Years" id="2013">2013</ul>
+    <ul class="Years" id="2012">2012</ul>
+    <li style="display:none;" class="achievements AboutMe2" >Edusave Good Progress Award 2019</li>
+    <img style="display:none;" src="Edusave Good Progress 2019.jpeg" alt="Edusave Good Progress 2019">
+    <li style="display:none;" class="achievements AboutMe2" >Bedok View Model Student Award 2019</li>
+    <img style="display:none;" src="ModelStudentAward.jpeg" alt="Model Student Award">
+    <li style="display:none;" class="achievements AboutMe2" >Credit in ICAS Assessments Mathematics 2019</li>
+    <img style="display:none;" src="ICAS Math 2019.jpeg" alt="ICAS Math 2019">
+    <li style="display:none;" class="achievements AboutMe2" >Participation in Code Xtreme Apps 2019</li>
+    <img style="display:none;" src="Code Xtreme Apps 2019 participation.jpeg" alt="Code Xtreme Apps 2019">
+    <li style="display:none;" class="achievements AboutMe2" >LifeSaving 3 Award 2019</li>
+    <img style="display:none;" src="Life Saving 3.jpeg" alt="Life Saving 3">
+    <li style="display:none;" class="achievements AboutMe2" >Award of commendation in Discovering the Science of Flight Advanced Flight Module 2019</li>
+    <img style="display:none;" src=".jpeg" alt="">
+    <li style="display:none;" class="achievements AboutMe2" >Participation in BVSS Student Leadership Camp 2019</li>
+    <img style="display:none;" src="StudentLeadershipCamp.jpeg" alt="Student Leadership Camp">
+    <li style="display:none;" class="achievements AboutMe2" >Outstanding CCA Member Award (SJBS)2018</li>
+    <img style="display:none;" src="Outstanding CCA Member.jpeg" alt="Outstanding CCA Member">
+    <li style="display:none;" class="achievements AboutMe2" >2nd Runner up in Singapore Taekwan-do Academy Junior Board Breaking Challenge 2018</li>
+    <img style="display:none;" src="3rd in Junior Board Breaking challenge.jpeg" alt="3rd in Junior Board Breaking challenge">
+    <img style="display:none;" class="Medals" src="Board Breaking Challenge 3rd.jpeg" alt="Board Breaking Challenge 3rd">
+    <li style="display:none;" class="achievements">2013 ICAS mathematics and science competition</li>
+    <img style="display:none;" src="2013 ICAS Math.jpeg" alt="2013 ICAS Math"><img style="display:none;" src="2013 ICAS Science.jpeg" alt="2013 ICAS Science">
+    <li style="display:none;" class="achievements">2015 ICAS mathematics and science competition</li>
+    <img style="display:none;" src="2015 ICAS Math.jpeg" alt="2015 ICAS Math"><img style="display:none;" src="2015 ICAS Science.jpeg" alt="2015 ICAS Science">
+    <li style="display:none;" class="achievements">2016 Math Olympiad</li>
+    <img style="display:none;" src="2016 Math Olympiad.jpeg" alt="2016 Math Olympiad">
+    <li style="display:none;" class="achievements">Gold Swimsafer</li>
+    <img style="display:none;" src="Gold Swimsafer award.jpeg" alt="">
+    <li style="display:none;" class="achievements">Grade 5 Violin</li>
+    <img style="display:none;" src="Grade 5 violin.jpeg" alt="Grade 5 violin">
+    <li style="display:none;" class="achievements">Mathematics outstanding performance 2012</li>
+    <img style="display:none;" src="P2 math.jpeg" alt="P2 math">
+    <li style="display:none;" class="achievements">Mathematics outstanding performance 2014</li>
+    <img style="display:none;" src="P4 Math.jpeg" alt="P4 Math">
+    <script>
+        const AllYears=document.getElementsByClassName("Years")
+        function Year(year){
+            var Achievements=document.getElementsByClassName(`${year}`)
+            for(i=1;i<=Achievements.length;i++){
+                Achievements[i-1].style.display="block"
+            }
+        }
+        for(i=1;i<=AllYears.length;i++){
+            AllYears[i-1].addEventListener("hover")
+        }
+    </script>
 </body>
 </html>
