@@ -1,25 +1,18 @@
+
 body{
+    animation: Fade 5s linear;
     font-family: 'Montserrat', sans-serif;
     color:white;
     height:max-content;
+    object-fit: cover;
     background-color: black;
-    background-image: linear-gradient(black,grey);
-}
-img{
-    width: 30vw;
-}
-p{
-    font-size: 2vw;
+    background-image: linear-gradient(to left,black,grey);
 }
 .achievements{
     position: relative;
     color: lightblue;
     font-size: 3vw;
     width: 95vw;
-}
-.About{
-    position: relative;
-    width: 90vw;
 }
 #nav{
     font-size: 2vw;
@@ -48,11 +41,11 @@ p{
     margin-left: 50%;
     margin-right: 2%;
 }
-.Years{
+.catagories{
     text-align: center;
     font-size: 50px;
 }
-.Years:hover{
+.catagories:hover{
     cursor: pointer;
     text-decoration: underline;
 }
