@@ -16,10 +16,10 @@ body{
 #ViewMore{
     position: relative;
     top: 50vh;
-    left: 44vw;
-    width: min-content;
+    width: 20%;
     color:red;
     text-decoration: none;
+    display: inline-block;
 }
 #ViewMore:hover{
     text-decoration: underline;
@@ -32,6 +32,6 @@ body{
     position: relative;
     display: inline-block;
 }
-#content{
+.content{
     text-align: center;
 }
