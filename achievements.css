@@ -36,17 +36,18 @@ div#nav{
     z-index: 99999;
     position: fixed;
     top: 0;
-    background-color: gray;
+    background-color: lightblue;
     width: 100%;
     left:0;
 }
 #title{
+    top: 20vh;
     font-size: 3vw;
     text-align: center;
     position: relative;
 }
 .navbar{
-    color:white;
+    color:black;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -62,10 +63,15 @@ div#nav{
     margin-right: 2%;
 }
 .catagories{
+    position: relative;
+    top: 20vh;
     text-align: center;
     font-size: 30px;
+    transition: 1s;
 }
 .catagories:hover{
+    letter-spacing: 3px;
+    color: lime;
     cursor: pointer;
     text-decoration: underline;
 }

@@ -1,17 +1,12 @@
 @media only screen and (orientation:portrait){
-    div#intro{
-        width: inherit;
+    body{
+        width: max-content;
     }
-    a#ViewMore{
-        width: inherit;
+    h2{
+        font-size: 15px;
+        width: max-content;
     }
-    div#SelfIntro{
-        width: inherit;
-    }
-    .content{
-        text-align: center;
-        object-fit: cover;
-    }
+
 }
 @keyframes Fade{
     from{opacity: 0;}
@@ -21,16 +16,17 @@ body{
     animation: Fade 1s linear;
     background-image: linear-gradient(to left, black, gray);
     object-fit: cover;
+
 }
 #intro{
     position: relative;
-    top:50vh;
+    top:35vh;
     text-align: center;
     color: white;
 }
 #ViewMore{
     position: relative;
-    top: 50vh;
+    top: 35vh;
     width: 20%;
     color:gold;
     text-decoration: none;
@@ -43,11 +39,11 @@ body{
     color: red;
     text-decoration: underline;
 }
-#SelfIntro{
+h2{
     text-align: center;
     color: white;
-    top:50vh;
-    width: 50%;
+    top:35vh;
+    width: 45%;
     position: relative;
     display: inline-block;
 }
