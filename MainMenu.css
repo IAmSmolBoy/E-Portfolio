@@ -1,7 +1,17 @@
 @media only screen and (orientation:portrait){
-body{
-    display:none;
-}
+    div#intro{
+        width: inherit;
+    }
+    a#ViewMore{
+        width: inherit;
+    }
+    div#SelfIntro{
+        width: inherit;
+    }
+    .content{
+        text-align: center;
+        object-fit: cover;
+    }
 }
 @keyframes Fade{
     from{opacity: 0;}
