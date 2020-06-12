@@ -32,11 +32,15 @@ body{
     position: relative;
     top: 50vh;
     width: 20%;
-    color:red;
+    color:gold;
     text-decoration: none;
     display: inline-block;
+    transition: 1s;
 }
 #ViewMore:hover{
+    background-color: black;
+    border: red solid 1px;
+    color: red;
     text-decoration: underline;
 }
 #SelfIntro{
