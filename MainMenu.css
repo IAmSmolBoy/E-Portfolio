@@ -28,5 +28,10 @@ body{
     text-align: center;
     color: white;
     top:50vh;
+    width: 50%;
     position: relative;
+    display: inline-block;
+}
+#content{
+    text-align: center;
 }
