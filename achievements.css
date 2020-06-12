@@ -1,9 +1,18 @@
-
+@keyframes dragDown{
+    0%{transform: translateY(-100%);opacity: 0;}
+    50%{transform: translateY(0);opacity: 0.5;}
+    100%{transform: translateY(0);opacity: 1;}
+}
+@keyframes Fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
 body{
-    animation: Fade 5s linear;
+    animation: Fade 1s linear;
     font-family: 'Montserrat', sans-serif;
     color:white;
     height:max-content;
+    text-align: center;
     object-fit: cover;
     background-color: black;
     background-image: linear-gradient(to left,black,grey);
