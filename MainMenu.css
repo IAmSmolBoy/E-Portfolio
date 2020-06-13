@@ -60,15 +60,17 @@ div.content{
 #ViewMore{
     position: relative;
     top: 35vh;
-    color:gold;
+    color:white;
+    border: white solid 1px;
+    padding: 14px;
     text-decoration: none;
     display: inline-block;
     transition: 1s;
 }
 #ViewMore:hover{
-    background-color: black;
-    border: red solid 1px;
-    color: red;
+    color: black;
+    background: white;
+    border:black 1s linear;
     text-decoration: underline;
 }
 h2{
