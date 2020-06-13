@@ -7,22 +7,24 @@
     from{opacity: 0;letter-spacing: 10px;}
     to{opacity: 1;letter-spacing: 0px;}
 }
-@media only screen and (orientation:portrait){
-    div#nav{
-        background-color: teal;
-    }
-    a.navbar{
-        margin:0;
-        left: 0;
+@media only screen and (orientation:portrait) and (min-width:0px) and (max-width:500px){
+    body{
+        background:green;
     }
 }
-img{
+@media only screen and (orientation:portrait) and (min-width:501px) and (max-width:100000px){
+    body{
+        background:yellow;
+    }
+}
+img.achievements{
     max-width: 30vw;
     margin: auto;
 }
-a{
+a.navbar{
     color: white;
     white-space: nowrap;
+    
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -54,7 +56,7 @@ div#nav{
     font-size: 3vw;
     position: relative;
 }
-.navbar{
+li.navbar{
     text-align: unset;
     margin-left: 20px;
     margin-right: 20px;
@@ -83,6 +85,10 @@ div#nav{
     cursor: pointer;
     text-decoration: underline;
 }
+h2.socials{
+    top: 20vh;
+    position: relative;
+}
 li.socials{
     top: 20vh;
     position: relative;
@@ -90,9 +96,9 @@ li.socials{
     display: inline-block;
 }
 img.socialsLogos{
-    height: 50px;
+    height: 10vh;
     transition: 0.5s;
 }
 img.socialsLogos:hover{
-    height: 75px;
+    transform:scale(1.5)
 }
