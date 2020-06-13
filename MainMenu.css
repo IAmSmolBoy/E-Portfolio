@@ -1,12 +1,40 @@
-@media only screen and (orientation:portrait){
+@media only screen and (orientation:portrait)and(max-width:400px){
     body{
         width: max-content;
     }
+    div.content{
+        margin: auto;
+        text-align: center;
+    }
     h2{
+        margin: auto;
         font-size: 15px;
+        width: 100%;
+    }
+    a{
+        margin: auto;
+        font-size: 15px;
+        width: 100%;    
+    }
+}
+@media only screen and (max-width:1100px) and (min-width:401px){
+    body{
         width: max-content;
     }
-
+    div.content{
+        margin: auto;
+        text-align: center;
+    }
+    h2{
+        margin: auto;
+        font-size: 50px;
+        width: 100%;
+    }
+    a{
+        margin: auto;
+        font-size: 50px;
+        width: 100%;    
+    }
 }
 @keyframes Fade{
     from{opacity: 0;}
@@ -16,18 +44,22 @@ body{
     animation: Fade 1s linear;
     background-image: linear-gradient(to left, black, gray);
     object-fit: cover;
+    width: 100vw;
+    margin: 0;
 
+}
+div.content{
+    margin: auto;
+    text-align: center;
 }
 #intro{
     position: relative;
     top:35vh;
-    text-align: center;
     color: white;
 }
 #ViewMore{
     position: relative;
     top: 35vh;
-    width: 20%;
     color:gold;
     text-decoration: none;
     display: inline-block;
@@ -43,10 +75,6 @@ h2{
     text-align: center;
     color: white;
     top:35vh;
-    width: 45%;
     position: relative;
-    display: inline-block;
-}
-.content{
-    text-align: center;
+    display: block;
 }
