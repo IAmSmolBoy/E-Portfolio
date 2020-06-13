@@ -4,8 +4,14 @@
     100%{transform: translateY(0);opacity: 1;}
 }
 @keyframes Fade{
-    from{opacity: 0;}
-    to{opacity: 1;}
+    from{opacity: 0;letter-spacing: 10px;}
+    to{opacity: 1;letter-spacing: 0px;}
+}
+@media only screen and (orientation:portrait){
+    a.navbar{
+        margin:0;
+        left: 0;
+    }
 }
 img{
     max-width: 30vw;
@@ -16,7 +22,6 @@ a{
     white-space: nowrap;
 }
 body{
-    animation: Fade 1s linear;
     font-family: 'Montserrat', sans-serif;
     color:white;
     height:min-content;
@@ -30,9 +35,10 @@ body{
     color: lightblue;
     font-size: 2vw;
     width: 95vw;
+    top: 20vh;
 }
 div#nav{
-    text-align: center;
+    text-align: right;
     z-index: 99999;
     position: fixed;
     top: 0;
@@ -43,24 +49,23 @@ div#nav{
 #title{
     top: 20vh;
     font-size: 3vw;
-    text-align: center;
     position: relative;
 }
 .navbar{
+    text-align: unset;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
     color:black;
     text-decoration: none;
     transition: 0.5s;
 }
 .navbar:hover{
-    color:black;
-    border: white solid 1px;
-    background-color: darkgray;
+    color: lightblue;
+    border: lightblue solid 1px;
+    background-color: blue;
     text-decoration: underline;
     cursor: pointer;
-}
-#home{
-    margin-left: 50%;
-    margin-right: 2%;
 }
 .catagories{
     position: relative;
@@ -74,4 +79,17 @@ div#nav{
     color: lime;
     cursor: pointer;
     text-decoration: underline;
+}
+li.socials{
+    top: 20vh;
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+}
+img.socialsLogos{
+    height: 50px;
+    transition: 0.5s;
+}
+img.socialsLogos:hover{
+    height: 75px;
 }
