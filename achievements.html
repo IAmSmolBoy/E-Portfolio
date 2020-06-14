@@ -62,35 +62,38 @@
                         <img  class=" achievements Academics"  src="Certs/Commendation NP Advanced Elective.jpeg" alt="Commendation NP Advanced Elective">
                     </div>
                     <div class="cert2">
-                        <li   class=" achievements Academics">2013 ICAS mathematics and science competition</li>
-                        <div class="two twopics">
+                        <li   class=" achievements Academics">2013 ICAS mathematics competition</li>
                         <img  class="achievements Academics twopics"  src="Certs/2013 ICAS Math.jpeg" alt="2013 ICAS Math">
-                        <img  class="achievements Academics twopics"  src="Certs/2013 ICAS Science.jpeg" alt="2013 ICAS Science">
-                        </div>
                     </div>
                 </div>
                 <div class="CertsFlex">
                 <div class="cert3">
-                    <li   class="achievements Academics">2015 ICAS mathematics and science competition</li>
-                    <div class="twopics">
-                    <img  class="achievements Academics twopics"  src="Certs/2015 ICAS Math.jpeg" alt="2015 ICAS Math">
-                    <img  class="achievements Academics twopics"  src="Certs/2015 ICAS Science.jpeg" alt="2015 ICAS Science">
-                    </div>
+                    <li   class=" achievements Academics">2013 ICAS science competition</li>
+                    <img  class="achievements Academics twopics"  src="Certs/2013 ICAS Science.jpeg" alt="2013 ICAS Science">
                 </div>
                 <div class="cert4">
-                    <li   class="achievements Academics">2016 Math Olympiad</li>
-                    <img  class="achievements Academics"  src="Certs/2016 Math Olympiad.jpeg" alt="2016 Math Olympiad">
+                    <li   class="achievements Academics">2015 ICAS mathematics and science competition</li>
+                    <img  class="achievements Academics twopics"  src="Certs/2015 ICAS Math.jpeg" alt="2015 ICAS Math">
+                </div>
                 </div>
             </div>
-            </div>
-            <!-- <div class="CertAbout" id="Last">
-                <div class="LastCerts">
-                    <li class="achievements Academics">Project TLM</li>
-                    <img src="Certs/Project TLM P6.jpeg" alt="Project TLM P6" class="achievements Academics">
+            <div class="CertAbout">
+                <div class="CertsFlex">
+                    <div class="cert1">
+                        <li class="achievements Academics">Project TLM</li>
+                        <img src="Certs/Project TLM P6.jpeg" alt="Project TLM P6" class="achievements Academics">
+                    </div>
+                    <div class="cert2">
+                        <li class="achievements Academics">2015 ICAS mathematics and science competition</li>
+                        <img  class="achievements Academics twopics"  src="Certs/2015 ICAS Science.jpeg" alt="2015 ICAS Science">
+                    </div>
                 </div>
-            </div> -->
+                <div class="LastCerts" >
+                    <li class="achievements Academics LastCerts">2016 Math Olympiad</li>
+                    <img  class="achievements Academics LastCerts"  src="Certs/2016 Math Olympiad.jpeg" alt="2016 Math Olympiad">
+                </div>
+            </div>
         </div>
-    </div>
     
     <div id="LeaderhipSect">
         <ul class="catagories" id="Leadership">Leadership and CCA</ul>
@@ -117,6 +120,7 @@
         <img  class="achievements Misc" src="Certs/Grade 5 violin.jpeg" alt="Grade 5 violin">
     </div>
     </div>
+</div>
 
     <div id="Socials">
         <h2 class="socials">Socials</h2>
@@ -128,6 +132,9 @@
     <script>
         function clickDetector(id){
             document.getElementById(id).addEventListener("click",(e)=>{
+                for(i=1;i<=document.getElementsByClassName("CertsFlex").length;i++){
+                    document.getElementsByClassName("CertsFlex")
+                }
                 for(i=1;i<=document.getElementsByClassName("CertAbout").length;i++){
                     if(document.getElementsByClassName("CertAbout")[i-1].style.marginBottom!="1250px"&&document.getElementsByClassName("CertAbout")[i-1].style.height!="min-content"){
                         document.getElementsByClassName("CertAbout")[i-1].style.marginBottom="1250px"

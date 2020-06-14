@@ -94,6 +94,10 @@ ul.catagories{
     cursor: pointer;
     text-decoration: underline;
 }
+div#Socials{
+    position: relative;
+    top:20vh;
+}
 h2.socials{
     position: relative;
 }
@@ -122,7 +126,7 @@ div.twopics{
     display:flex;
 }
 img.twopics{
-    width:15vw;
+    width:25vw;
 }
 ::-webkit-scrollbar {
     width:  20px;
@@ -202,4 +206,10 @@ div.CertsFlex{
 div#AcademcsContent{
     display: block;
     height:0;
+}
+img.LastCerts{
+    margin: auto;
+}
+li.LastCerts{
+    text-align: center;
 }
