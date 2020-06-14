@@ -9,12 +9,12 @@
 </head>
 <body>
     <div id="nav">
-        <a href="index.html" id="home" class="navbar">Back</a>
-        <a href="#Projects" class="navbar">Projects</a>
-        <a href="#Academics" class="navbar">Academics</a>
-        <a href="#Leadership" class="navbar">leadership and CCA</a>
-        <a href="#Misc" class="navbar">Sports and Music</a>
-        <a href="#title" class="navbar">To the top</a>
+        <a href="index.html" id="home" class="Leftnavbar">Back</a>
+        <a href="#Projects" class="Leftnavbar">Projects</a>
+        <a href="#Academics" class="Leftnavbar">Academics</a>
+        <a href="#Leadership" class="Rightnavbar">leadership and CCA</a>
+        <a href="#Misc" class="Rightnavbar">Sports and Music</a>
+        <a href="#title" class="Rightnavbar">To the top</a>
     </div>
     <div id="Content">Certificates
     <div id="ProjectsSect">
@@ -32,24 +32,24 @@
 
     <div id="AcademicsSect">
         <ul class="catagories" id="Academics">Academics</ul>
-        <div id="AcademicsContent">
+        <div id="AcademicsContent" style="height:0px">
             <div class="CertAbout" >
                 <div class="CertsFlex">
-                    <div class="cert1">
+                    <div class="Certs cert1">
                         <li  class=" achievements Academics">Mathematics outstanding performance 2012</li>
                         <img  class=" achievements Academics" src="Certs/P2 math.jpeg" alt="P2 math">
                     </div>
-                    <div class="cert2">
+                    <div class="Certs cert2">
                         <li  class=" achievements Academics">Mathematics outstanding performance 2014</li>
                         <img  class=" achievements Academics" src="Certs/P4 Math.jpeg" alt="P4 Math">
                     </div>
                 </div>
                 <div class="CertsFlex">
-                    <div class="cert3">
+                    <div class="Certs cert3">
                         <li style="display:none" class=" achievements Academics" >Edusave Good Progress Award 2019</li>
                         <img  class=" achievements Academics" src="Certs/Edusave Good Progress 2019.jpeg" alt="Edusave Good Progress 2019">
                     </div>
-                    <div class="cert4">
+                    <div class="Certs cert4">
                         <li  class=" achievements Academics" >Credit in ICAS Assessments Mathematics 2019</li>
                         <img  class=" achievements Academics" src="Certs/ICAS Math 2019.jpeg" alt="ICAS Math 2019">
                     </div>
@@ -57,21 +57,21 @@
             </div>
             <div class="CertAbout" >
                 <div class="CertsFlex">
-                    <div class="cert1">
+                    <div class="Certs cert1">
                         <li   class=" achievements Academics" >Award of commendation in Discovering the Science of Flight Advanced Flight Module 2019</li>
                         <img  class=" achievements Academics"  src="Certs/Commendation NP Advanced Elective.jpeg" alt="Commendation NP Advanced Elective">
                     </div>
-                    <div class="cert2">
+                    <div class="Certs cert2">
                         <li   class=" achievements Academics">2013 ICAS mathematics competition</li>
                         <img  class="achievements Academics twopics"  src="Certs/2013 ICAS Math.jpeg" alt="2013 ICAS Math">
                     </div>
                 </div>
                 <div class="CertsFlex">
-                <div class="cert3">
+                <div class="Certs cert3">
                     <li   class=" achievements Academics">2013 ICAS science competition</li>
                     <img  class="achievements Academics twopics"  src="Certs/2013 ICAS Science.jpeg" alt="2013 ICAS Science">
                 </div>
-                <div class="cert4">
+                <div class="Certs cert4">
                     <li   class="achievements Academics">2015 ICAS mathematics and science competition</li>
                     <img  class="achievements Academics twopics"  src="Certs/2015 ICAS Math.jpeg" alt="2015 ICAS Math">
                 </div>
@@ -79,16 +79,16 @@
             </div>
             <div class="CertAbout">
                 <div class="CertsFlex">
-                    <div class="cert1">
+                    <div class="Certs cert1">
                         <li class="achievements Academics">Project TLM</li>
                         <img src="Certs/Project TLM P6.jpeg" alt="Project TLM P6" class="achievements Academics">
                     </div>
-                    <div class="cert2">
+                    <div class="Certs cert2">
                         <li class="achievements Academics">2015 ICAS mathematics and science competition</li>
                         <img  class="achievements Academics twopics"  src="Certs/2015 ICAS Science.jpeg" alt="2015 ICAS Science">
                     </div>
                 </div>
-                <div class="LastCerts" >
+                <div class="Certs LastCerts" >
                     <li class="achievements Academics LastCerts">2016 Math Olympiad</li>
                     <img  class="achievements Academics LastCerts"  src="Certs/2016 Math Olympiad.jpeg" alt="2016 Math Olympiad">
                 </div>
@@ -132,19 +132,12 @@
     <script>
         function clickDetector(id){
             document.getElementById(id).addEventListener("click",(e)=>{
-                for(i=1;i<=document.getElementsByClassName("CertsFlex").length;i++){
-                    document.getElementsByClassName("CertsFlex")
+                if(document.getElementById("AcademicsContent").style.height==="0px"){
+                    document.getElementById("AcademicsContent").style.height="min-content"
                 }
-                for(i=1;i<=document.getElementsByClassName("CertAbout").length;i++){
-                    if(document.getElementsByClassName("CertAbout")[i-1].style.marginBottom!="1250px"&&document.getElementsByClassName("CertAbout")[i-1].style.height!="min-content"){
-                        document.getElementsByClassName("CertAbout")[i-1].style.marginBottom="1250px"
-                            document.getElementsByClassName("CertAbout")[i-1].style.height=""
-                    }
-                    else{
-                        if(document.getElementsByClassName("CertAbout")[i-1].style.margin!="0"&&document.getElementsByClassName("CertAbout")[i-1].style.height!="0"){
-                            document.getElementsByClassName("CertAbout")[i-1].style.height="0"
-                            document.getElementsByClassName("CertAbout")[i-1].style.marginBottom="0"
-                        }
+                else{
+                    if(document.getElementById("AcademicsContent").style.height==="min-content"){
+                        document.getElementById("AcademicsContent").style.height="0"
                     }
                 }
                 for(i=1;i<=document.getElementsByClassName(id).length;i++){
