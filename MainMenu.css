@@ -16,6 +16,11 @@
         font-size: 10px;
         width: 100%;    
     }
+    img.logo{
+        position:relative;
+        width: 25%;
+        margin:auto;
+    }
 }
 @media only screen and (max-width:1100px) and (min-width:501px){
     body{
@@ -35,6 +40,11 @@
         font-size: 50px;
         width: 100%;    
     }
+    img.logo{
+        position:relative;
+        height: 50vh;
+        margin:auto;
+    }
 }
 @keyframes Fade{
     from{opacity: 0;}
@@ -42,7 +52,7 @@
 }
 body{
     animation: Fade 1s linear;
-    background-image: linear-gradient(to left, black, gray);
+    background-image: linear-gradient(to right, black, blue);
     object-fit: cover;
     width: 100vw;
     margin: 0;
@@ -54,14 +64,15 @@ div.content{
 }
 #intro{
     position: relative;
-    top:35vh;
+    top:0;
     color: white;
 }
 #ViewMore{
     position: relative;
-    top: 35vh;
+    top:0h;
     color:white;
     border: white solid 1px;
+    border-radius: 10px;
     padding: 14px;
     text-decoration: none;
     display: inline-block;
@@ -70,13 +81,19 @@ div.content{
 #ViewMore:hover{
     color: black;
     background: white;
-    border:black 1s linear;
+    border:black solid 5px;
+    border-radius: 10px;
     text-decoration: underline;
 }
 h2{
     text-align: center;
     color: white;
-    top:35vh;
+    top:0;
     position: relative;
     display: block;
+}
+img.logo{
+    position:relative;
+    height: 50vh;
+    margin:auto;
 }

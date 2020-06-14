@@ -21,9 +21,6 @@ img.achievements{
 .achievements{
     display:none;
 }
-li.achievements{
-    text-align:unset;
-}
 a.navbar{
     color: white;
     white-space: nowrap;
@@ -65,7 +62,6 @@ div#title{
     background-color: gray;
     margin: auto;
     width: min-content;
-    text-align: center;
     top: 20vh;
     width: 90vw;
     font-size: 50px;
@@ -142,9 +138,16 @@ div.twopics{
 ::-webkit-scrollbar-thumb:hover {
     background: darkgray;
 }
-img#discord{
-    
-}
 .Projects{
     margin:auto;
+}
+img.one{
+    float: left;
+    position: relative;
+}
+div.one{
+    text-align: left;
+    width: 20vw;
+    float: left;
+    position: relative;
 }
